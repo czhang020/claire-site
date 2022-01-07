@@ -19,7 +19,7 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="./claire-site/assets/profile.png" alt=""/>
+                    <img src="./assets/profile.png" alt=""/>
                 </div>
             </div>
             <div className="right">
@@ -29,7 +29,7 @@ export default function Intro() {
                     <h3>studying <span ref = {textRef}></span></h3>
                 </div>
                 <a href="#about">
-                    <img src="./claire-site/assets/blackarrow.png" alt=""/>
+                    <img src="./assets/blackarrow.png" alt=""/>
                 </a>
             </div>
         </div>
