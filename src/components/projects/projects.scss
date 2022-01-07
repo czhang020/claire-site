@@ -13,6 +13,10 @@
         position: absolute;
         cursor: pointer;
 
+        @include mobile{
+            display: none;
+        }
+
         &.left{
             left: 150px;
             transform: rotate(90deg);
@@ -31,6 +35,11 @@
         left: 0;
         transition: all 1s ease-out;
 
+        @include mobile{
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
        
         .container{
             width: 100vw;
@@ -46,6 +55,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile{
+                    width: 90%;
+                    height: 160px;
+                    margin: 5px 0px;
+                }
 
             }
 
@@ -64,30 +79,62 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    .imgContainer{
-                        width: 70px;
-                        height: 70px;
-                        border-radius: 50%;
-                        background-color: rgb(255, 44, 86);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                    @include mobile{
+                        flex-direction: row;
+                        height: 100%;
+                    }
 
-                        img{
+                    .titleContainer{
+
+                        @include mobile{
+                            flex: .3;
+                        }
+        
+
+                        .imgContainer{
                             width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                            background-color: rgb(255, 44, 86);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            @include mobile{
+                                margin-left: 5px;
+                            }
+    
+                            img{
+                                width: 70px;
+                            }
+                        }
+                        h2{
+                            font-size: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: $mainColor;
+    
+                            @include mobile{
+                                font-size: 12px;
+                                padding: 5px;
+                                text-align: center;
+                                margin-right: 10px;
+                            }
                         }
                     }
-                    h2{
-                        font-size: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: $mainColor;
-                    }
+
                     h4{
                         font-size: 12px;
                         font-weight: 400;
                         color: $mainColor;
+
+                        @include mobile{
+                            height: 90%;
+                            width: 90%;
+                            flex: .7;
+                        }
+        
                     }
                     p{
                         font-size: 12px;
@@ -95,6 +142,10 @@
                         background-color: rgb(255, 248, 211);
                         padding: 4px;
                         color: $mainColor;
+
+                        @include mobile{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -107,6 +158,10 @@
                 justify-content: center;
                 overflow: hidden;
                 background-color: rgb(235, 197, 28);
+
+                @include mobile{
+                    display: none;
+                }
 
                 img{
                     width: 800px;

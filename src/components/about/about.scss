@@ -1,15 +1,24 @@
 @import "../../global.scss";
 
 .about{
-    padding-top: 10px;
+    padding-top: 5px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    @include mobile{
+        justify-content: space-around;
+        padding: 0;
+    }
+
     h1{
         font-size: 50px;
         color: $mainColor;
+
+        @include mobile{
+            font-size: 30px;
+        }
     }
 
     .container{
@@ -19,6 +28,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mobile{
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
 
         .left{
             box-shadow: 0px 0px 15px -8px black;
@@ -33,10 +48,15 @@
             background-color: rgb(211, 255, 251);
             transition: all 1s ease;
 
+            @include mobile{
+                display: none;
+            }
+
             img{
                 height: 80px;
                 width: 70px;
                 padding: 10px;
+                
             }
             
             h3{
@@ -57,6 +77,7 @@
                     justify-content: center;
                     color: rgb(114, 228, 218);
                     padding: 5px;
+                    text-align: center;
                 }
 
                 p{
@@ -77,6 +98,8 @@
                     &:hover{
                         transform: scale(1.1);
                     }
+
+
                 }
            
             }
@@ -98,6 +121,12 @@
             transition: all 1s ease;
             margin: 10px;
 
+            @include mobile{
+                height: 100%;
+                width: 90%;
+                flex: .75;
+            }
+
             .imgContainer{
                 display: flex;
                 align-items: center;
@@ -118,6 +147,10 @@
             h3{
                 color: $mainColor;
                 padding: 20px;
+
+                @include mobile{
+                    padding: 5px;
+                }
             }
 
             p{
@@ -143,10 +176,22 @@
             transition: all 1s ease;
             box-shadow: 0px 0px 15px -8px black;
 
+            @include mobile{
+                height: 100%;
+                width: 90%;
+                flex: .25;
+            }
+
             img{
                 height: 60px;
                 width: 60px;
                 padding: 10px;
+
+                @include mobile{
+                    height: 50px;
+                    width: 50px;
+                    padding: 5px;
+                }
             }
 
             h3{
@@ -159,6 +204,10 @@
                 justify-content: center;
                 flex-direction: column;
 
+                @include mobile{
+                    height: 50%;
+                }
+
                 h4{
                     text-align: center;
                     display: flex;
@@ -166,11 +215,19 @@
                     justify-content: center;
                     color: rgb(114, 228, 218);
                     padding: 5px;
+
+                    @include mobile{
+                        padding: 0px;
+                    }
                 }
 
                 img{
                     width: 60px;
                     height: 60px;
+
+                    @include mobile{
+                        display: none;
+                    }
                 }
 
                 .pool{

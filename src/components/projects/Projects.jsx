@@ -53,10 +53,13 @@ export default function Projects() {
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
-                                <div className="imgContainer">
-                                    <img src={d.icon} alt="" />
+                                <div className="titleContainer">
+                                    <div className="imgContainer">
+                                        <img src={d.icon} alt="" />
+                                    </div>
+                                    <h2>{d.title}</h2>
                                 </div>
-                                <h2>{d.title}</h2>
+
                                 <h4>{d.desc}</h4>
                                 <p>{d.tools}</p>
                             </div>
