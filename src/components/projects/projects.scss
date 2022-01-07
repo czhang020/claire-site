@@ -85,7 +85,11 @@
                     }
 
                     .titleContainer{
-
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        
                         @include mobile{
                             flex: .3;
                         }
@@ -114,6 +118,7 @@
                             align-items: center;
                             justify-content: center;
                             color: $mainColor;
+                            margin: 10px;
     
                             @include mobile{
                                 font-size: 12px;
