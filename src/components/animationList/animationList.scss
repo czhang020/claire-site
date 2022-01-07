@@ -1,0 +1,19 @@
+@import "../../global.scss";
+
+.animationList{
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+
+    &.active{
+        background-color: rgb(255, 234, 117);
+        color: $mainColor;
+    }
+}

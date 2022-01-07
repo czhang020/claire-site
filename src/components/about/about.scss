@@ -1,0 +1,192 @@
+@import "../../global.scss";
+
+.about{
+    padding-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 50px;
+        color: $mainColor;
+    }
+
+    .container{
+        width: 80%;
+        padding-top: 20px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left{
+            box-shadow: 0px 0px 15px -8px black;
+            margin: 20px;
+            border-radius: 20px;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: .33;
+            background-color: rgb(211, 255, 251);
+            transition: all 1s ease;
+
+            img{
+                height: 80px;
+                width: 70px;
+                padding: 10px;
+            }
+            
+            h3{
+                color: $mainColor;
+            }
+
+            .listContainer{
+                display: flex;
+                flex-direction: column; 
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                height: 90%;
+                
+                h4{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(114, 228, 218);
+                    padding: 5px;
+                }
+
+                p{
+                    color: $mainColor;
+                    display: list-item;
+                    list-style-type: disc; 
+                    list-style-position: inside;
+                    font-size: 15px;
+                    text-align: center;
+                }
+                
+                img{
+                    width: 60px;
+                    height: 50px;
+                    border-radius: 10px;
+                    transition: all 1s ease;
+                    
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+           
+            }
+            
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .center{
+            box-shadow: 0px 0px 15px -8px black;
+            height: 90%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: .33;
+            background-color: rgb(157, 235, 228);
+            transition: all 1s ease;
+            margin: 10px;
+
+            .imgContainer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                width: 210px;
+                height: 230px;
+                border-radius: 23px;
+
+                img{
+                    height: 220px;
+                    width: 200px;
+                    border-radius: 20px;
+                    background-color: rgb(255, 44, 86);
+                }
+            }
+
+            h3{
+                color: $mainColor;
+                padding: 20px;
+            }
+
+            p{
+                color: $mainColor;
+                width: 90%;
+                font-size: 16px;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .right{
+            margin: 20px;
+            border-radius: 20px;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: .33;
+            background-color: rgb(211, 255, 251);
+            transition: all 1s ease;
+            box-shadow: 0px 0px 15px -8px black;
+
+            img{
+                height: 60px;
+                width: 60px;
+                padding: 10px;
+            }
+
+            h3{
+                color: $mainColor;
+            }
+            
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h4{
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(114, 228, 218);
+                    padding: 5px;
+                }
+
+                img{
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .pool{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                }
+            }
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            
+        }
+
+        
+    }
+}
